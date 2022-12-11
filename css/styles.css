@@ -372,9 +372,13 @@ fill: var(--accent-color);
 position: relative;
 display: flex;
 flex-direction: column;
-margin-bottom: 10px;
 
 }
+.form-field:not(:last-child) {
+margin-bottom: 10px;
+}
+
+
 .form-field label {
     margin-bottom: 4px;
 
@@ -949,11 +953,13 @@ color: var(--address-text-color);
     
     margin-left: auto;
 }
-.mailing-footer>div {
+.mailing-footer>form {
     display: flex;
     
 }
 .mail-input-footer {
+
+    padding: 15px 16px;
     width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -971,6 +977,7 @@ color: var(--address-text-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
+    cursor: pointer;
 
     margin-left: 12px;
     background: var(--accent-color);
